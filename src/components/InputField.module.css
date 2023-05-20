@@ -1,0 +1,55 @@
+.fieldContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px 0px;
+}
+
+.fieldContainer label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #8897b1;
+}
+
+.fieldContainer input {
+  padding: 10px 5px;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f9fbff;
+  color: #a1aabf;
+}
+
+.fieldContainer input:focus {
+  outline: none !important;
+  box-shadow: #e5ecfe 0px 0px 5px 0px, #e5ecfe 0px 0px 1px 0px;
+  transition: all 0.3s;
+}
+
+.inputField {
+  border: 1px solid #f0f4f9;
+}
+
+.inputField:focus {
+  border: 1px solid #9ca9c170;
+}
+
+.inputFieldError {
+  border: 1px solid #fe766a;
+}
+
+.inputFieldError:focus {
+  border: 1px solid #fe766a;
+}
+
+.errorMessage {
+  color: #fe766a !important;
+  font-size: 12px !important;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .fieldContainer label {
+    font-size: 15px;
+  }
+}
